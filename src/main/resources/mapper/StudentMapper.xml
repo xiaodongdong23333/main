@@ -19,7 +19,7 @@
     delete from graduate
     where student_id = #{studentId,jdbcType=BIGINT}
   </delete>
-  <insert id="insert" parameterType="com.example.demo.entity.Student">
+  <insert id="insert" parameterType="com.example.demo.entity.Student" useGeneratedKeys="true" keyProperty="studentId">
     insert into graduate (student_id, name, score
       )
     values (#{studentId,jdbcType=BIGINT}, #{name,jdbcType=VARCHAR}, #{score,jdbcType=INTEGER}

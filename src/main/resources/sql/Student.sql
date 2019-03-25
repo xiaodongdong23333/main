@@ -1,4 +1,5 @@
 -- 创建表
+/*AUTO_INCREMENT非常重要,增加模块时时学号递增*/
 CREATE TABLE `graduate` (
   `student_id` bigint(20) NOT NULL AUTO_INCREMENT,
   `name` varchar(100) NOT NULL ,
@@ -13,4 +14,3 @@ VALUES
     (2016, 'Jerry', 100);
 
 
-/*AUTO_INCREMENT非常重要,增加模块时时学号递增*/
